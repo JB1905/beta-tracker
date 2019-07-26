@@ -1,0 +1,40 @@
+{
+  "name": "beta-tracker",
+  "version": "1.0.0",
+  "description": "Check if new Apple betas are available",
+  "author": "Jakub Biesiada",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint index.js --fix",
+    "prettier": "prettier --write 'index.js'"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.2",
+    "diff": "^4.0.1",
+    "dotenv": "^8.0.0",
+    "puppeteer": "^1.19.0",
+    "textbelt": "^0.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "index.js": [
+      "npm run prettier",
+      "npm run lint",
+      "git add"
+    ]
+  }
+}
