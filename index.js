@@ -16,9 +16,7 @@ require('dotenv').config({ path: './.env' });
       document.querySelectorAll('.article-content-container h2')
     );
 
-    const releases = elements.map(element => element.innerHTML);
-
-    return releases.join('\n');
+    return elements.map(element => element.innerHTML).join('\n');
   });
 
   const updateBetas = old => {
@@ -33,14 +31,12 @@ require('dotenv').config({ path: './.env' });
   };
 
   const checkBetas = () => {
-    const files = fs.readdirSync('./betas').sort((prev, next) => {
-      return prev > next ? -1 : 1;
-    });
+    const files = fs
+      .readdirSync('./betas')
+      .sort((prev, next) => (prev > next ? -1 : 1));
 
     fs.readFile(`./betas/${files[0]}`, 'utf8', (err, data) => {
-      if (data !== releasesList) {
-        updateBetas(data);
-      }
+      if (data !== releasesList) updateBetas(data);
     });
   };
 
