@@ -8,9 +8,7 @@ const checkBetas = releases => {
     .sort((prev, next) => (prev > next ? -1 : 1));
 
   fs.readFile(`./betas/${files[0]}`, 'utf8', (err, oldReleases) => {
-    if (oldReleases !== releases) {
-      updateBetas(oldReleases, releases);
-    }
+    if (oldReleases !== releases) updateBetas(oldReleases, releases);
   });
 };
 
