@@ -4,11 +4,11 @@
   "description": "Check if new Apple betas are available",
   "author": "Jakub Biesiada",
   "license": "MIT",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "lint": "eslint index.js --fix",
-    "prettier": "prettier --write 'index.js'"
+    "start": "node src/index.js",
+    "lint": "eslint src --fix",
+    "prettier": "prettier --write 'src'"
   },
   "dependencies": {
     "diff": "^4.0.1",
@@ -30,7 +30,7 @@
     }
   },
   "lint-staged": {
-    "index.js": [
+    "**/*.{js}": [
       "npm run prettier",
       "npm run lint",
       "git add"
