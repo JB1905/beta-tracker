@@ -1,4 +1,4 @@
-# [Beta Tracker](https://github.com/JB1905/beta-tracker)
+# Beta Tracker
 
 ## About
 Beta Tacker checks if new Apple betas are available. It will send you message when detect new release.
