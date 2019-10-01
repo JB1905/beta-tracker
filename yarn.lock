@@ -1552,10 +1552,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-nexmo@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/nexmo/-/nexmo-2.4.1.tgz#a980a04f06b9d8d1333084c0d15576b1c1f1ca36"
-  integrity sha512-/UhA2D9zf2V4dx/e0Gbbf81I3VAsCAVrx27sGtOftqwnkS/zML9D7+DjHS02tx6yCSP43ukzxTmqHXINlE+dRw==
+nexmo@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/nexmo/-/nexmo-2.4.2.tgz#12187611c85e490b22ac8d7c639a1bf49b0f561c"
+  integrity sha512-9DYMSyKgVunboK8hDb6wuFawXfNPGxfooQs7mv4m5DWxVywtAx03PNYB7GUqZWwevmH9iGwijlQBVPgachmitw==
   dependencies:
     jsonwebtoken "^8.4.0"
     request "^2.88.0"
