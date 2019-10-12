@@ -2,6 +2,8 @@ const fs = require('fs');
 const diff = require('diff');
 const Nexmo = require('nexmo');
 
+const { betasDir } = require('../package.json');
+
 const nexmo = new Nexmo({
   apiKey: process.env.API_KEY,
   apiSecret: process.env.API_SECRET,
@@ -9,8 +11,8 @@ const nexmo = new Nexmo({
   privateKey: process.env.PRIVATE_KEY_PATH
 });
 
-const updateBetas = (oldReleases, releases) => {
-  fs.writeFile(`./betas/${Date.now()}.txt`, releases, () => {
+const updateBetas = (releases, oldReleases = '') => {
+  fs.writeFile(`${betasDir}/${Date.now()}.txt`, releases, () => {
     const differences = diff
       .diffLines(oldReleases, releases)
       .filter(difference => difference.added)
