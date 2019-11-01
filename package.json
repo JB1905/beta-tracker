@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "diff": "^4.0.1",
-    "dotenv": "^8.1.0",
+    "dotenv": "^8.2.0",
     "nexmo": "^2.4.2",
     "puppeteer": "^1.20.0"
   },
