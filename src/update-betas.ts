@@ -1,6 +1,6 @@
-const fs = require('fs');
-const diff = require('diff');
-const Nexmo = require('nexmo');
+import fs from 'fs';
+import * as diff from 'diff';
+import Nexmo from 'nexmo';
 
 const { betasDir } = require('../package.json');
 
@@ -11,7 +11,7 @@ const nexmo = new Nexmo({
   privateKey: process.env.PRIVATE_KEY_PATH
 });
 
-const updateBetas = (releases, oldReleases = '') => {
+const updateBetas = (releases: string, oldReleases = '') => {
   fs.writeFile(`${betasDir}/${Date.now()}.txt`, releases, () => {
     const differences = diff
       .diffLines(oldReleases, releases)
@@ -23,7 +23,7 @@ const updateBetas = (releases, oldReleases = '') => {
       process.env.PHONE_TO,
       differences.join(''),
       { type: 'unicode' },
-      (err, data) => {
+      (err: Error, data: any) => {
         if (err) {
           console.log(err);
         } else {
@@ -34,4 +34,4 @@ const updateBetas = (releases, oldReleases = '') => {
   });
 };
 
-module.exports = updateBetas;
+export default updateBetas;

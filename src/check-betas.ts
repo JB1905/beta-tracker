@@ -1,10 +1,10 @@
-const fs = require('fs');
+import fs from 'fs';
 
-const updateBetas = require('./update-betas');
+import updateBetas from './update-betas';
 
 const { betasDir } = require('../package.json');
 
-const checkBetas = releases => {
+const checkBetas = (releases: string) => {
   if (fs.existsSync(betasDir)) {
     const files = fs
       .readdirSync(betasDir)
@@ -20,4 +20,4 @@ const checkBetas = releases => {
   }
 };
 
-module.exports = checkBetas;
+export default checkBetas;
