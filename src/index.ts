@@ -1,7 +1,9 @@
-const puppeteer = require('puppeteer');
-require('dotenv').config();
+import puppeteer from 'puppeteer';
+import { config } from 'dotenv';
 
-const checkBetas = require('./check-betas');
+import checkBetas from './check-betas';
+
+config();
 
 (async () => {
   const browser = await puppeteer.launch({
