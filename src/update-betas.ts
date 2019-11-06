@@ -23,7 +23,7 @@ const updateBetas = (releases: string, oldReleases = '') => {
       process.env.PHONE_TO,
       differences.join(''),
       { type: 'unicode' },
-      (err: Error, data: any) => {
+      (err: Error, data: object) => {
         if (err) {
           console.log(err);
         } else {
