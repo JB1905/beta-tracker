@@ -21,13 +21,13 @@
   "devDependencies": {
     "@types/diff": "^4.0.2",
     "@types/dotenv": "^8.2.0",
-    "@types/node": "^12.12.8",
-    "@types/puppeteer": "^1.20.2",
-    "@typescript-eslint/parser": "^2.7.0",
+    "@types/node": "^12.12.11",
+    "@types/puppeteer": "^2.0.0",
+    "@typescript-eslint/parser": "^2.8.0",
     "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "husky": "^3.0.9",
+    "husky": "^3.1.0",
     "lint-staged": "^9.4.3",
     "prettier": "^1.19.1",
     "typescript": "^3.7.2"
