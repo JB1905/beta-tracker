@@ -8,7 +8,7 @@
   "betasDir": "betas",
   "scripts": {
     "start": "tsc && node lib/index.js",
-    "build": "tsc -p .",
+    "build": "rimraf lib/* && tsc -p .",
     "lint": "eslint 'src/**/*.ts' --fix",
     "prettier": "prettier --write 'src/**/*.ts'"
   },
