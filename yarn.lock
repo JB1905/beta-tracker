@@ -594,10 +594,10 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-diff@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.1.tgz#0c667cb467ebbb5cea7f14f135cc2dba7780a8ff"
-  integrity sha512-s2+XdvhPCOF01LRQBC8hf4vhbVmI2CGS5aZnxLJlT5FtdhPCDFq80q++zK2KlrVorVDdL5BOGZ/VfLrVtYNF+Q==
+diff@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
+  integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -1614,10 +1614,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-nexmo@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/nexmo/-/nexmo-2.5.2.tgz#d5ff9b64a4b3e9b54d76e52499a788f36c371398"
-  integrity sha512-nxlTAh/XgRWnRhfPN+AQeM6vSOU+RLJIMass38heY0ertcrkTLW1Wo73ASx4ycqsWIE6J3EP4SO0OZRtNFgaxA==
+nexmo@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/nexmo/-/nexmo-2.5.3.tgz#578af3af6d27db0435a18e5bfd52df6f9838609e"
+  integrity sha512-rzky6EjYMCmqx4o1+c2XyqN3ZKFCBwr8EupecdV+ScUIrUptyu0ByXSG4OmWNWtpsNPQyThGnOaePEUJHYdXhw==
   dependencies:
     jsonwebtoken "^8.4.0"
     request "^2.88.0"

@@ -13,9 +13,9 @@
     "prettier": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
-    "diff": "^4.0.1",
+    "diff": "^4.0.2",
     "dotenv": "^8.2.0",
-    "nexmo": "^2.5.2",
+    "nexmo": "^2.5.3",
     "puppeteer": "^2.0.0"
   },
   "devDependencies": {
