@@ -15,7 +15,7 @@
   "dependencies": {
     "diff": "^4.0.2",
     "dotenv": "^8.2.0",
-    "nexmo": "^2.5.3",
+    "nexmo": "^2.6.0",
     "puppeteer": "^2.0.0"
   },
   "devDependencies": {
