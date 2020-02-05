@@ -16,14 +16,14 @@
     "diff": "^4.0.2",
     "dotenv": "^8.2.0",
     "nexmo": "^2.6.0",
-    "puppeteer": "^2.1.0"
+    "puppeteer": "^2.1.1"
   },
   "devDependencies": {
     "@types/diff": "^4.0.2",
     "@types/dotenv": "^8.2.0",
     "@types/node": "^13.7.0",
     "@types/puppeteer": "^2.0.0",
-    "@typescript-eslint/parser": "^2.18.0",
+    "@typescript-eslint/parser": "^2.19.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
