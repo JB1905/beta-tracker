@@ -7,7 +7,7 @@ config();
 
 (async () => {
   const browser = await puppeteer.launch({
-    headless: false
+    headless: false,
   });
 
   const page = await browser.newPage();
@@ -18,7 +18,7 @@ config();
       document.querySelectorAll('.article-content-container h2')
     );
 
-    return elements.map(element => element.innerHTML).join('\n');
+    return elements.map((element) => element.innerHTML).join('\n');
   });
 
   checkBetas(releases);
