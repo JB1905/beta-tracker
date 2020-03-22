@@ -4,9 +4,9 @@ module.exports = {
   plugins: ['prettier'],
   env: {
     node: true,
-    browser: true
+    browser: true,
   },
   parserOptions: {
-    sourceType: 'module'
-  }
+    sourceType: 'module',
+  },
 };

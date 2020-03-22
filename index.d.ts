@@ -1,1 +1,1 @@
-declare module 'nexmo'
+declare module 'nexmo';
