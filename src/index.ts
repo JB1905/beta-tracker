@@ -11,6 +11,7 @@ config();
   });
 
   const page = await browser.newPage();
+
   await page.goto('https://developer.apple.com/news/releases');
 
   const releases = await page.evaluate(() => {
