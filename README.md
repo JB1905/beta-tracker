@@ -25,9 +25,9 @@ cd beta-tracker
 `yarn start` or `npm start`
 
 ## Build with
-- Puppeteer
-- TypeScript
-- Nexmo
+- [Puppeteer](https://pptr.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Nexmo (Vonage) API](https://developer.nexmo.com/)
 
 ## License
 This project is licensed under the MIT License © 2019-present Jakub Biesiada

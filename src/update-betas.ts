@@ -7,8 +7,6 @@ const { betasDir } = require('../package.json');
 const nexmo = new Nexmo({
   apiKey: process.env.NEXMO_API_KEY,
   apiSecret: process.env.NEXMO_API_SECRET,
-  applicationId: process.env.NEXMO_APP_ID,
-  privateKey: process.env.NEXMO_PRIVATE_KEY_PATH,
 });
 
 const updateBetas = (releases: string, oldReleases = '') => {
@@ -19,8 +17,8 @@ const updateBetas = (releases: string, oldReleases = '') => {
       .map((difference) => difference.value);
 
     nexmo.message.sendSms(
-      process.env.NEXMO_PHONE_FROM,
-      process.env.NEXMO_PHONE_TO,
+      process.env.FROM_NUMBER,
+      process.env.TO_NUMBER,
       differences.join(''),
       { type: 'unicode' },
       (err: Error, data: object) => {
