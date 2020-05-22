@@ -8,13 +8,13 @@ Beta Tacker checks if new Apple betas are available. It will send you message wh
 
 ##### 1. Clone repo
 
-```
+```sh
 git clone https://github.com/JB1905/beta-tracker.git
 ```
 
 ##### 2. Go to directory
 
-```
+```sh
 cd beta-tracker
 ```
 
