@@ -1,6 +1,6 @@
 {
   "name": "beta-tracker",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Check if new Apple betas are available",
   "author": "Jakub Biesiada",
   "license": "MIT",
