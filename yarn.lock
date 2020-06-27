@@ -1774,9 +1774,9 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
 
-nexmo@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/nexmo/-/nexmo-2.7.0.tgz#d673226a17025d5696ca735371d859a8ae10cb96"
+nexmo@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/nexmo/-/nexmo-2.8.0.tgz#ee77c8aa9f03f69588b9c94979e03afda37c0db1"
   dependencies:
     jsonwebtoken "^8.4.0"
     request "^2.88.0"
