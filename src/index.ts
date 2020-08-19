@@ -3,6 +3,8 @@ import { config } from 'dotenv';
 
 import checkBetas from './check-betas';
 
+const FEED_URL = 'https://developer.apple.com/news/releases';
+
 config();
 
 (async () => {
@@ -12,7 +14,7 @@ config();
 
   const page = await browser.newPage();
 
-  await page.goto('https://developer.apple.com/news/releases');
+  await page.goto(FEED_URL);
 
   const releases = await page.evaluate(() => {
     const elements = Array.from(
