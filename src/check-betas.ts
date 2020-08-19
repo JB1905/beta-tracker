@@ -11,7 +11,11 @@ const checkBetas = (releases: string) => {
       .sort((prev, next) => (prev > next ? -1 : 1));
 
     fs.readFile(`${betasDir}/${files[0]}`, 'utf8', (err, oldReleases) => {
-      if (oldReleases !== releases) updateBetas(releases, oldReleases);
+      if (err) throw err;
+
+      if (oldReleases !== releases) {
+        updateBetas(releases, oldReleases);
+      }
     });
   } else {
     fs.mkdirSync(betasDir);
