@@ -15,6 +15,8 @@ const checkBetas = (releases: string) => {
 
       if (oldReleases !== releases) {
         updateBetas(releases, oldReleases);
+      } else {
+        console.log('No new beta releases found 🤗');
       }
     });
   } else {
