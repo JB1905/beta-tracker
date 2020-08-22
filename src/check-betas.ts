@@ -1,4 +1,5 @@
 import fs from 'fs';
+import chalk from 'chalk';
 
 import updateBetas from './update-betas';
 
@@ -16,7 +17,7 @@ const checkBetas = (releases: string) => {
       if (oldReleases !== releases) {
         updateBetas(releases, oldReleases);
       } else {
-        console.log('No new beta releases found 🤗');
+        console.log(chalk.green('No new beta releases found 🤗'));
       }
     });
   } else {

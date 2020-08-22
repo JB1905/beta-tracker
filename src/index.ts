@@ -1,5 +1,6 @@
 import puppeteer from 'puppeteer';
 import { config } from 'dotenv';
+import striptags from 'striptags';
 
 import checkBetas from './check-betas';
 
@@ -24,7 +25,7 @@ config();
     return elements.map((element) => element.innerHTML).join('\n');
   });
 
-  checkBetas(releases);
+  checkBetas(striptags(releases));
 
   await browser.close();
 })();
