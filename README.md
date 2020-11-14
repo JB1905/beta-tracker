@@ -15,7 +15,7 @@ git clone https://github.com/JB1905/beta-tracker.git
 ##### 2. Go to directory
 
 ```sh
-cd beta-tracker
+cd /path/to/beta-tracker
 ```
 
 ##### 3. Install dependencies
@@ -23,7 +23,7 @@ cd beta-tracker
 ```sh
 yarn
 
-# Or, use npm
+# Or use npm
 npm i
 ```
 
@@ -37,7 +37,7 @@ npm i
 ```sh
 yarn start
 
-# Or, use npm
+# Or use npm
 npm start
 ```
 
