@@ -14,22 +14,22 @@ Beta Tacker checks if new Apple betas are available. It will send you message wh
 ##### 1. Clone repo
 
 ```sh
-git clone https://github.com/JB1905/beta-tracker.git
+$ git clone https://github.com/JB1905/beta-tracker.git
 ```
 
 ##### 2. Go to directory
 
 ```sh
-cd /path/to/beta-tracker
+$ cd /path/to/beta-tracker
 ```
 
 ##### 3. Install dependencies
 
 ```sh
-yarn
+$ yarn
 
 # Or use npm
-npm i
+$ npm i
 ```
 
 ##### 4. Set environment variables
@@ -40,10 +40,10 @@ npm i
 ##### 5. Run
 
 ```sh
-yarn start
+$ yarn start
 
 # Or use npm
-npm start
+$ npm start
 ```
 
 ## Build with
