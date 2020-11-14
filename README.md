@@ -7,7 +7,7 @@ Beta Tacker checks if new Apple betas are available. It will send you message wh
 ### Alternatives
 
 - [official Apple Releases Newsfeed](https://developer.apple.com/news/releases/)
-- [official Apple RSS](https://developer.apple.com/news/releases/)
+- [official Apple RSS](feed://developer.apple.com/news/releases/rss/releases.rss/)
 
 ## Setup
 
