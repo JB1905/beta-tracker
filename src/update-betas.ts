@@ -21,7 +21,7 @@ const updateBetas = (releases: string, oldReleases = '') => {
       process.env.TO_NUMBER,
       differences.join(''),
       { type: 'unicode' },
-      (err: Error, data: object) => {
+      (err, data) => {
         if (err) {
           console.log(err);
         } else {
