@@ -12,6 +12,7 @@ Beta Tacker checks if new Apple betas are available. It will send you message wh
 ## Prerequisites
 
 - Node.js
+- npm/Yarn
 
 ## Setup
 
