@@ -9,6 +9,10 @@ Beta Tacker checks if new Apple betas are available. It will send you message wh
 - [official Apple Releases news feed](https://developer.apple.com/news/releases/)
 - [official Apple RSS](feed://developer.apple.com/news/releases/rss/releases.rss/)
 
+## Prerequisites
+
+- Node.js
+
 ## Setup
 
 ##### 1. Clone repo
