@@ -1,12 +1,15 @@
 import fs from 'fs';
 import * as diff from 'diff';
+import { config } from 'dotenv';
 import Nexmo from 'nexmo';
 
 const { betasDir } = require('../package.json');
 
+config();
+
 const nexmo = new Nexmo({
-  apiKey: process.env.NEXMO_API_KEY,
-  apiSecret: process.env.NEXMO_API_SECRET,
+  apiKey: process.env.NEXMO_API_KEY!,
+  apiSecret: process.env.NEXMO_API_SECRET!,
 });
 
 const updateBetas = (releases: string, oldReleases = '') => {
@@ -17,8 +20,8 @@ const updateBetas = (releases: string, oldReleases = '') => {
       .map((difference) => difference.value);
 
     nexmo.message.sendSms(
-      process.env.FROM_NUMBER,
-      process.env.TO_NUMBER,
+      process.env.FROM_NUMBER!,
+      process.env.TO_NUMBER!,
       differences.join(''),
       { type: 'unicode' },
       (err, data) => {

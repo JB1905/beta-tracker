@@ -1,12 +1,9 @@
 import puppeteer from 'puppeteer';
-import { config } from 'dotenv';
 import striptags from 'striptags';
 
 import checkBetas from './check-betas';
 
 const FEED_URL = 'https://developer.apple.com/news/releases';
-
-config();
 
 (async () => {
   const browser = await puppeteer.launch({

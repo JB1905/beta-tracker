@@ -2,7 +2,7 @@
 
 ## About
 
-Beta Tacker checks if new Apple betas are available. It will send you message when detect new release.
+Beta Tacker checks if new Apple betas are available. When it detects a new version, it will send you a message (SMS).
 
 ### Alternatives
 
@@ -13,6 +13,7 @@ Beta Tacker checks if new Apple betas are available. It will send you message wh
 
 - Node.js
 - npm/Yarn
+- Nexmo (Vonage) account with API keys
 
 ## Setup
 
