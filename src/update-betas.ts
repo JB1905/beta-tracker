@@ -1,11 +1,8 @@
 import fs from 'fs';
 import * as diff from 'diff';
-import { config } from 'dotenv';
 import Nexmo from 'nexmo';
 
 const { betasDir } = require('../package.json');
-
-config();
 
 const nexmo = new Nexmo({
   apiKey: process.env.NEXMO_API_KEY!,
