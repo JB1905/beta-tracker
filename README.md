@@ -29,7 +29,12 @@ $ git clone https://github.com/JB1905/beta-tracker.git
 $ cd /path/to/beta-tracker
 ```
 
-##### 3. Install dependencies
+##### 3. Set environment variables
+
+- Copy `.env.example` to `.env`
+- Set environment variables in `.env`
+
+##### 4. Install dependencies
 
 ```sh
 $ yarn
@@ -37,11 +42,6 @@ $ yarn
 # Or use npm
 $ npm i
 ```
-
-##### 4. Set environment variables
-
-- Copy `.env.example` to `.env`
-- Set environment variables in `.env`
 
 ##### 5. Run
 
