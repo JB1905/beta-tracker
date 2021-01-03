@@ -31,7 +31,7 @@ $ cd /path/to/beta-tracker
 
 ##### 3. Set environment variables
 
-- Copy `.env.example` to `.env`
+- Copy `.env.example` file to `.env`
 - Set environment variables in `.env`
 
 ##### 4. Install dependencies
