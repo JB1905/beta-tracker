@@ -12,9 +12,9 @@ const sortItems = (items: string[]) => {
 };
 
 const checkBetas = (releases: string) => {
-  const isPreviousBetasExists = fs.existsSync(betasDir);
+  const isPreviousBetasExist = fs.existsSync(betasDir);
 
-  if (isPreviousBetasExists) {
+  if (isPreviousBetasExist) {
     const betaStampFiles = sortItems(getPrevBetaStamps());
 
     const latestBetaStampUrl = `${betasDir}/${betaStampFiles[0]}`;
