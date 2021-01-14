@@ -1,15 +1,31 @@
 import fs from 'fs';
 import * as diff from 'diff';
+import { config } from 'dotenv';
 import Nexmo from 'nexmo';
 
 const { betasDir } = require('../package.json');
+
+config();
 
 const nexmo = new Nexmo({
   apiKey: process.env.NEXMO_API_KEY!,
   apiSecret: process.env.NEXMO_API_SECRET!,
 });
 
-const findDifferencesBetweenOldAndNew = (oldReleases, releases) => {
+const updateBetas = (releases: string, oldReleases = '') => {
+  const newStampPath = `${betasDir}/${Date.now()}.txt`;
+
+  fs.writeFile(newStampPath, releases, () => {
+    const differences = findDifferencesBetweenOldAndNew(oldReleases, releases);
+
+    notifyUserByMessage(differences);
+  });
+};
+
+const findDifferencesBetweenOldAndNew = (
+  oldReleases: string,
+  releases: string
+) => {
   return diff
     .diffLines(oldReleases, releases)
     .filter((difference) => difference.added)
@@ -30,14 +46,6 @@ const notifyUserByMessage = (messages: string[]) => {
       }
     }
   );
-};
-
-const updateBetas = (releases: string, oldReleases = '') => {
-  fs.writeFile(`${betasDir}/${Date.now()}.txt`, releases, () => {
-    const differences = findDifferencesBetweenOldAndNew(oldReleases, releases);
-
-    notifyUserByMessage(differences);
-  });
 };
 
 export default updateBetas;
