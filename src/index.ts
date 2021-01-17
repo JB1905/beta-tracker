@@ -27,7 +27,12 @@ const getReleaseTitles = () => {
 
   const releases = await page.evaluate(getReleaseTitles);
 
-  checkBetas(striptags(releases));
+  // TODO
+  if (releases) {
+    checkBetas(striptags(releases));
+  } else {
+    throw new Error('Releases not found');
+  }
 
   await browser.close();
 })();
