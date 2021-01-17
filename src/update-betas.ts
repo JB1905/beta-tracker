@@ -12,16 +12,6 @@ const nexmo = new Nexmo({
   apiSecret: process.env.NEXMO_API_SECRET!,
 });
 
-const updateBetas = (releases: string, oldReleases = '') => {
-  const newStampPath = `${betasDir}/${Date.now()}.txt`;
-
-  fs.writeFile(newStampPath, releases, () => {
-    const differences = findDifferencesBetweenOldAndNew(oldReleases, releases);
-
-    notifyUserByMessage(differences);
-  });
-};
-
 const findDifferencesBetweenOldAndNew = (
   oldReleases: string,
   releases: string
@@ -46,6 +36,16 @@ const notifyUserByMessage = (messages: string[]) => {
       }
     }
   );
+};
+
+const updateBetas = (releases: string, oldReleases = '') => {
+  const newStampPath = `${betasDir}/${Date.now()}.txt`;
+
+  fs.writeFile(newStampPath, releases, () => {
+    const differences = findDifferencesBetweenOldAndNew(oldReleases, releases);
+
+    notifyUserByMessage(differences);
+  });
 };
 
 export default updateBetas;

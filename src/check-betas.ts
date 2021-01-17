@@ -5,6 +5,12 @@ import updateBetas from './update-betas';
 
 const { betasDir } = require('../package.json');
 
+const sortItems = (items: string[]) => {
+  return items.sort((prev, next) => (prev > next ? -1 : 1));
+};
+
+const getPrevBetaStamps = () => fs.readdirSync(betasDir);
+
 const checkBetas = (releases: string) => {
   const isPreviousBetasExist = fs.existsSync(betasDir);
 
@@ -28,11 +34,5 @@ const checkBetas = (releases: string) => {
     updateBetas(releases);
   }
 };
-
-const sortItems = (items: string[]) => {
-  return items.sort((prev, next) => (prev > next ? -1 : 1));
-};
-
-const getPrevBetaStamps = () => fs.readdirSync(betasDir);
 
 export default checkBetas;
