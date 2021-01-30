@@ -8,8 +8,8 @@ const { betasDir } = require('../package.json');
 config();
 
 const nexmo = new Nexmo({
-  apiKey: process.env.NEXMO_API_KEY!,
-  apiSecret: process.env.NEXMO_API_SECRET!,
+  apiKey: process.env.NEXMO_API_KEY as string,
+  apiSecret: process.env.NEXMO_API_SECRET as string,
 });
 
 const findDifferencesBetweenOldAndNew = (
@@ -24,8 +24,8 @@ const findDifferencesBetweenOldAndNew = (
 
 const notifyUserByMessage = (messages: string[]) => {
   nexmo.message.sendSms(
-    process.env.FROM_NUMBER!,
-    process.env.TO_NUMBER!,
+    process.env.FROM_NUMBER as string,
+    process.env.TO_NUMBER as string,
     messages.join(''),
     { type: 'unicode' },
     (err, data) => {
