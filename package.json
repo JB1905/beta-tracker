@@ -47,8 +47,8 @@
   },
   "lint-staged": {
     "src/**/*.ts": [
-      "npm run prettier",
-      "npm run lint"
+      "yarn prettier",
+      "yarn lint"
     ]
   }
 }
